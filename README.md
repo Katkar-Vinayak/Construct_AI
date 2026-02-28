@@ -34,7 +34,21 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 - `models/` – saved ML model (`risk_model.joblib`)
 - `scripts/train_model.py` – optional CLI training script
 
-## 3) Notes for judges
+## 3) Deploy (Streamlit Community Cloud)
+
+This repo is ready for Streamlit Cloud. It includes:
+- `requirements.txt` for dependencies
+- `runtime.txt` to pin a compatible Python version
+
+Steps:
+1. Go to https://share.streamlit.io (or Streamlit Cloud dashboard)
+2. Click **New app** → select your GitHub repo: `Katkar-Vinayak/Construct_AI`
+3. Set **Main file path** to `app.py`
+4. Click **Deploy**
+
+If deployment fails, open the build logs in Streamlit Cloud and share them here.
+
+## 4) Notes for judges
 
 - All data is simulated/synthetic (safe for hackathon demos).
 - The ML model is intentionally simple but explainable.
